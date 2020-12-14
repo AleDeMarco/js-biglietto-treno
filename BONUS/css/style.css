@@ -1,0 +1,94 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  background-image: url(https://lh3.googleusercontent.com/proxy/dAeQPen5uYrItL2tWtYv2BNvPUir8kv3l9cZyfjDY3KSjUypydU4avc6NwZAvE1MOTPvhZJTDIxTY48MC35IFhE6SIS1wp7j0WRWKj1o-oKvSKBlPM1RVMueR-kHXCQ-);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+h2:not(:last-child){
+  margin-bottom: 10px;
+  color: white;
+  text-shadow: 0px 0px 5px red;
+}
+
+.top{
+  margin-top: 20vh;
+  display: flex;
+  justify-content: space-around;
+}
+
+.third-vw{
+  width: calc(100vw / 3);
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 255, 0.5);
+  z-index: 1;
+}
+
+.btn{
+  font-size: 20px;
+  color: white;
+  text-shadow: 0 0 5px red;
+  padding: 10px;
+  border: 2px solid red;
+  border-radius: 10px;
+  box-shadow: 0 0 5px white;
+  cursor: pointer;
+}
+
+.btn:hover{
+  color: red;
+  border: 2px solid white;
+  text-shadow: 0 0 5px white;
+  box-shadow: 0 0 5px red;
+}
+
+.bottom{
+  width: 40vw;
+  background-color: red;
+  padding: 20px;
+  margin-bottom: 30vh;
+  text-align: center;
+}
+
+h1{
+  animation: risultato 1s linear infinite;
+}
+
+@keyframes risultato {
+  0% {transform: scale(1);}
+  50% {transform: scale(1.5);}
+  100% {transform: scale(1);}
+}
+
+.train {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  animation: railway 20s linear infinite;
+  background-image: url(../img/train.gif);
+  background-repeat: no-repeat;
+  background-size: 20vh 10vw;
+  transform: scaleX(-1);
+}
+
+@keyframes railway {
+  0% {background-position: calc(100vw - 10vw) 0;}
+  20% {background-position: 0 0;}
+  40% {background-position: 0 calc(50vh - 20vh);}
+  60% {background-position: calc(100vw - 10vw) calc(50vh - 20vh);}
+  80% {background-position: calc(100vw - 10vw) calc(100vh - 20vh);}
+  100% {background-position: 0 calc(100vh - 20vh);}
+}

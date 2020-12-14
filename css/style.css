@@ -1,0 +1,52 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  background-image: url(https://lh3.googleusercontent.com/proxy/dAeQPen5uYrItL2tWtYv2BNvPUir8kv3l9cZyfjDY3KSjUypydU4avc6NwZAvE1MOTPvhZJTDIxTY48MC35IFhE6SIS1wp7j0WRWKj1o-oKvSKBlPM1RVMueR-kHXCQ-);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.top{
+  width: 40vw;
+  background-color: red;
+  padding: 20px;
+  margin-top: 30vh;
+  text-align: center;
+}
+
+h1{
+  animation: risultato 1s linear infinite;
+}
+
+@keyframes risultato {
+  0% {transform: scale(1);}
+  50% {transform: scale(1.5);}
+  100% {transform: scale(1);}
+}
+
+.train {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  animation: treno 10s linear infinite;
+  background-image: url(../img/train.gif);
+  background-repeat: no-repeat;
+  transform: scaleX(-1);
+  background-size: 20vw;
+}
+
+@keyframes treno {
+  0% {background-position: 100vw 60vh;}
+  100% {background-position: -20vw 60vh;}
+}

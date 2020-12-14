@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Boolean station</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="train"></div>
+  <form id="biglietto">
+    <div class="top">
+      <div class="third-vw">
+        <h2>Km di viaggio:</h2>
+        <input type="number" placeholder="Km">
+      </div>
+      <div class="third-vw">
+        <h2>Età del passeggero:</h2>
+        <input type="number" placeholder="Età">
+      </div>
+      <div class="third-vw">
+        <a class="btn" onclick="calcolo()">Calcola</a>
+      </div>
+    </div>
+  </form>
+  <div class="bottom">
+    <h2>Il prezzo del biglietto è:</h2>
+    <h1 id="price"></h1>
+  </div>
+  <script src="js/script.js" charset="utf-8"></script>
+</body>
+</html>
